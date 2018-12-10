@@ -21,7 +21,7 @@ demo(pod, statefulset)  -- Run all containers created as servers (web services, 
 After create cluster complete run following command
 
 ```
-kubectl create -f demo/aws-ingress.yaml -f demo/nfs-volume.yaml -f demo/secret.yaml -f demo/ingress-service.yaml
+kubectl create -f demo/aws-ingress.yaml -f demo/ingress-service.yaml -f demo/nfs-server.yaml -f demo/nfs-pvc.yaml -f demo/network-flannel.yaml -f demo/network-policy.yaml -f demo/secret.yaml
 ```
 
 wait for complete and run:
